@@ -7,10 +7,6 @@ $logMsg = Session::get('logMsg');
 if (isset($logMsg)) {
   echo $logMsg;
 }
-//$msg = Session::get('msg');
-//if (isset($msg)) {
-//  echo $msg;
-//}
 Session::set("msg", NULL);
 Session::set("logMsg", NULL);
 ?>
@@ -80,7 +76,7 @@ if (isset($activeId)) {
 
         <center>
             <label style="color: #E3493B;font-weight: bold;font-size: 20px;padding: -2px;">
-            Gestion Produits
+            Gestion des produits
         </label>
         </center>
 

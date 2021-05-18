@@ -1,5 +1,5 @@
 <?php
-//Exemple d'architecture MVC en PHP par eliseekn -> 59434291/43403398 - eliseekn@gmail.com
+
 
 //on définit le controlleur par défaut
 $controller_name = "homeRole";
@@ -38,10 +38,10 @@ if (isset($_GET['p']) && !empty($_GET['p'])) {
 }
 
 
-if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/Foodies/tasks/app/controllers/".$controller_name.".php")) {
+if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/Foodies/app/controllers/".$controller_name.".php")) {
     //on charge le fichier en question
 
-    require_once $_SERVER['DOCUMENT_ROOT'] ."/Foodies/tasks/app/controllers/".$controller_name.".php";
+    require_once $_SERVER['DOCUMENT_ROOT'] ."/Foodies/app/controllers/".$controller_name.".php";
         //on donne un nom au controller identique au nom de la classe en question selon une méthode personnelle
 	$controller_name = ucfirst(strtolower($controller_name)); //ex: home -> HomeController
     //on initialise la classe

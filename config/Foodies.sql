@@ -122,11 +122,11 @@ CREATE TABLE IF NOT EXISTS `livraisons` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produits`
+-- Table structure for table `roles`
 --
 
-DROP TABLE IF EXISTS `produits`;
-CREATE TABLE IF NOT EXISTS `produits` (
+DROP TABLE IF EXISTS `roles`;
+CREATE TABLE IF NOT EXISTS `roles` (
   `IdPRoduit` int NOT NULL,
   `PrixProduit` float NOT NULL,
   `DescreptionProduit` varchar(255) DEFAULT NULL,
